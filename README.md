@@ -15,4 +15,4 @@ The test programs “add” and “hog” ran without issue for the standard/def
 
 ![mlfqtest](https://github.com/user-attachments/assets/98c9d2d3-a31d-4679-8b4f-02c7cb3fd401)
 
-The test programs “add” and “hog” ran without issue again now for the MLFQ scheduler implementation, producing similar output, but “farm” and “schedpong” were still not working properly due to the memory issue mentioned before. I also attempted to run matmul with this new implementation, but it had an assertion error.
+The test programs “add” and “hog” ran without issue again now for the MLFQ scheduler implementation, if I implemented it correctly, producing similar output, but “farm” and “schedpong” were still not working properly due to the memory issue mentioned before. I also attempted to run matmul with this new implementation, but it had an assertion error.
