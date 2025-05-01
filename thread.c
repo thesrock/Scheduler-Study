@@ -858,12 +858,12 @@ schedule(void) /* changes */
    
    while (node != NULL) { /* Highest priority among threads */
       struct thread *t = node->tln_self;
-      if (high_thread == NULL || t->priority > high_thread->priority) {
+      if (high_thread == NULL || t->t_priority > high_thread->t_priority) {
          high_thread = t;
       }
-      node = node->tln_next; 
-      
-      if (high_thread != NULL) { /* Found thread */
+      node = node->tln_next;
+   }
+   if (high_thread != NULL) { /* Found thread */
          threadlist_remove(&curcpu->c_runqueue, high_thread);
          threadlist_addhead(&curcpu->c_runqueue, high_thread);
    }
